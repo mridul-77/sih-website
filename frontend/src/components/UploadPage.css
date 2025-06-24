@@ -1,0 +1,83 @@
+/* UploadPage.css */
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+button.choose {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+button.choose:hover {
+  background-color: #45a049;
+}
+
+button.submit {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button.submit:hover {
+  background-color: #1e88e5;
+}
+
+.description {
+  margin-top: 1.5rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.results-link {
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.results-link a {
+  color: #e91e63;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 2px solid #e91e63;
+  border-radius: 6px;
+}
+
+.results-link a:hover {
+  background-color: #e91e63;
+  color: white;
+}

@@ -1,0 +1,102 @@
+/* AdminPanel.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?fit=crop&w=1950&q=80') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.admin-panel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  backdrop-filter: blur(6px);
+}
+
+.admin-panel-box {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+}
+
+.admin-panel-box h2,
+.admin-panel-box h3 {
+  text-align: center;
+}
+
+.admin-panel-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.admin-panel-box input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.admin-panel-box button {
+  padding: 0.75rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.admin-panel-box button:hover {
+  background: #1e7e34;
+}
+
+.status-msg {
+  text-align: center;
+  font-weight: bold;
+  color: #ffc107;
+  margin-bottom: 1rem;
+}
+
+.entry-list {
+  list-style: none;
+  padding: 0;
+}
+
+.entry-list li {
+  background: rgba(255,255,255,0.2);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.entry-list button {
+  background: #dc3545;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.entry-list button:hover {
+  background: #c82333;
+}
