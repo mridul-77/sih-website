@@ -4,7 +4,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: url('https://images.unsplash.com/photo-1562184647-04f28d1c8f50?fit=crop&w=1950&q=80') no-repeat center center fixed;
+  background: url('farm.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -50,4 +50,21 @@ body, html {
   border-radius: 10px;
   margin-bottom: 1rem;
   color: #fff;
+}
+.home-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.7rem 1.4rem;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+  text-align: center;
+}
+
+.home-button:hover {
+  background: #fff;
+  color: #333;
 }

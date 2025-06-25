@@ -1,7 +1,6 @@
-// src/components/ResultsPage.js
-
 import React, { useEffect, useState } from 'react';
-import './ResultsPage.css';  // ⬅️ Import CSS
+import { Link } from 'react-router-dom'; // ⬅️ added
+import './ResultsPage.css';
 
 export default function ResultsPage() {
   const [results, setResults] = useState([]);
@@ -40,6 +39,9 @@ export default function ResultsPage() {
             ))}
           </ul>
         )}
+
+        {/* Home Button */}
+        <Link to="/" className="home-button">Back</Link>
       </div>
     </div>
   );

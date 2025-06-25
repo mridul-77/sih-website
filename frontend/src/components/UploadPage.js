@@ -1,5 +1,3 @@
-// frontend/src/components/UploadPage.js
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './UploadPage.css';
@@ -64,18 +62,12 @@ export default function UploadPage() {
 
       {msg && <p className="description">{msg}</p>}
 
-      <p className="description">
-        Our model uses a stacked LSTM and CNN architecture to predict future crop prices,
-        then applies Bollinger Bands to the forecast to identify optimal dates
-        for government market intervention.
-      </p>
-
-      <Link to="/admin/login" style={{ position: 'fixed', top: 10, right: 10 }}>
-        Admin
-      </Link>
-
       <div className="results-link">
         <Link to="/results">Go to Results Page</Link>
+      </div>
+
+      <div className="admin-link">
+        <Link to="/admin/login">Admin Login</Link>
       </div>
     </div>
   );

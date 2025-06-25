@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { Navigate } from 'react-router-dom';
 import './AdminPanel.css'; // ⬅️ Import the CSS
+import { Link } from 'react-router-dom';
 
 export default function AdminPanel() {
   const [dataset, setDataset] = useState('');
@@ -95,7 +96,9 @@ export default function AdminPanel() {
         </form>
 
         {msg && <p className="status-msg">{msg}</p>}
-
+ <Link to="/" className="green-button">
+  Back
+</Link>
         <h3>Current Entries</h3>
         {existing.length === 0 ? (
           <p>No results yet.</p>

@@ -1,13 +1,13 @@
-/* AdminPanel.css */
-
+/* General layout */
 body, html {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?fit=crop&w=1950&q=80') no-repeat center center fixed;
+  background: url('farm.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
+/* Container for Admin Panel */
 .admin-panel-container {
   display: flex;
   justify-content: center;
@@ -17,6 +17,7 @@ body, html {
   backdrop-filter: blur(6px);
 }
 
+/* Main Box */
 .admin-panel-box {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -27,6 +28,7 @@ body, html {
   color: #fff;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(12px);
+  box-sizing: border-box;
 }
 
 .admin-panel-box h2,
@@ -34,6 +36,7 @@ body, html {
   text-align: center;
 }
 
+/* Form layout */
 .admin-panel-box form {
   display: flex;
   flex-direction: column;
@@ -47,6 +50,7 @@ body, html {
   border-radius: 8px;
   font-size: 1rem;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .admin-panel-box button {
@@ -64,6 +68,7 @@ body, html {
   background: #1e7e34;
 }
 
+/* Status message */
 .status-msg {
   text-align: center;
   font-weight: bold;
@@ -71,19 +76,22 @@ body, html {
   margin-bottom: 1rem;
 }
 
+/* Entry List */
 .entry-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .entry-list li {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   color: #fff;
 }
 
@@ -95,8 +103,110 @@ body, html {
   color: white;
   cursor: pointer;
   transition: background 0.2s;
+  margin-top: 0.5rem;
 }
 
 .entry-list button:hover {
   background: #c82333;
+}
+
+/* Home / Back buttons */
+.home-button {
+  padding: 0.75rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Reusable green button (e.g., links styled as buttons) */
+.green-button {
+  display: inline-block;
+  text-align: center;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  padding: 0.75rem;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0rem;
+}
+
+.green-button:hover {
+  background: #1e7e34;
+}
+
+/* ---------------------- */
+/*      RESPONSIVE        */
+/* ---------------------- */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .admin-panel-container {
+    padding: 1.5rem;
+  }
+
+  .admin-panel-box {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .admin-panel-box h2 {
+    font-size: 1.8rem;
+  }
+
+  .admin-panel-box h3 {
+    font-size: 1.2rem;
+  }
+
+  .entry-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .entry-list button {
+    align-self: flex-end;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .admin-panel-box {
+    padding: 1rem;
+  }
+
+  .admin-panel-box input,
+  .admin-panel-box button {
+    font-size: 0.95rem;
+    padding: 0.65rem;
+  }
+
+  .home-button,
+  .green-button {
+    font-size: 0.95rem;
+    padding: 0.65rem;
+  }
+
+  .entry-list li {
+    padding: 0.75rem;
+  }
+
+  .entry-list button {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .admin-panel-box h2,
+  .admin-panel-box h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }
